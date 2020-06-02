@@ -1,0 +1,293 @@
+body {
+	background: url(../img/bg-header-desktop.png) no-repeat top left;
+	background-size: 100%;
+	font-family: 'Bai Jamjuree', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	padding: 0
+}
+@media (max-width: 700px) {
+	body {
+		background: url(../img/bg-header-mobile.png) no-repeat top left;
+		background-size: 100%
+	}
+}
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box
+}
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px
+}
+@media (max-width: 1199px) {
+	.container {
+		padding: 0 30px
+	}
+}
+.row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap
+}
+.w-700 {
+	text-align: center;
+	max-width: 700px;
+	margin: 35px auto
+}
+
+/* Tipografia
+---------------*/
+h1, h2, h3 {
+	font-weight: 600;
+	color: hsl(210, 10%, 33%);
+	margin: 0
+}
+h1 {font-size: 2.4em}
+h2 {font-size: 2em}
+h3 {font-size: 1.4em}
+@media (max-width: 700px){
+	h1 {font-size: 1.7em}
+	h2 {font-size: 1.7em}
+	h3 {font-size: 1.2em}
+}
+p {
+	color: hsl(210, 10%, 60%);
+	line-height: 1.5
+}
+a {
+	text-decoration: none;
+	color: hsl(210, 10%, 33%);
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s
+}
+
+/* Botões
+------------*/
+.btn {
+	display: inline-block;
+	padding: 15px 30px;
+	border-radius: 30px;
+	color: white;
+	background: hsl(171, 66%, 44%);
+	-webkit-box-shadow: 0 5px 1em rgba(0,0,0, .2);
+	        box-shadow: 0 5px 1em rgba(0,0,0, .2);
+	font-size: 17px;
+	margin: 5px;
+	-webkit-transition: opacity .2s;
+	-o-transition: opacity .2s;
+	transition: opacity .2s
+}
+.btn-blue {
+	background: hsl(233, 100%, 69%)
+}
+.btn:hover {
+	opacity: .8
+}
+
+/* Cabeçalho
+--------------*/
+header {
+	padding: 120px 0;
+	text-align: center
+}
+.header-text {
+	padding: 50px 0 20px 0;
+	max-width: 700px;
+	margin: 0 auto
+}
+.header-text p {
+	font-size: 18px
+}
+
+/* Acompanhe
+---------------*/
+
+.acompanhe .row {
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.acompanhe .col {
+	width: 50%;
+	padding: 50px 0 
+}
+.img-computer {
+	width: calc(100% + 30px);
+	margin-left: -30px
+}
+.list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.acompanhe li {
+	padding: 20px 0 20px 100px;
+	max-width: 500px
+}
+.acompanhe li p {
+	font-size: 15px
+}
+
+@media (max-width: 700px) {
+	.acompanhe .col {
+		width: 100%;
+		padding: 15px;
+		text-align: center
+	}
+	.acompanhe li {
+		padding-left: 0
+	}
+	.img-computer {
+		width: 100%;
+		margin:0px
+	}
+}
+
+/* Acesse Área
+-----------------*/
+.acesse-area {
+	padding: 50px 0;
+	text-align: center
+}
+.acesse-area img {
+	width: 100%;
+	max-width: 850px;
+	margin-top: 70px
+}
+@media (max-width: 700px) {
+	.acesse-area img {
+		margin-top: 20px
+	}
+}
+
+/* Sobrecarregar Fluxo
+--------------------------*/
+.s-fluxo {
+
+}
+.s-fluxo .row {
+	margin: 50px -15px;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center
+}
+.s-fluxo .col {
+	padding: 15px;
+	width: 33%;
+	max-width: 370px;
+	text-align: center
+}
+.s-fluxo .col img {
+	margin-bottom: 30px
+}
+@media (max-width: 700px) {
+	.s-fluxo .col {
+		width: 100%
+	}
+}
+
+/* Marcas
+-------------*/
+.marcas .row {
+	margin: 100px -15px
+}
+.marcas .col {
+	width: 20%;
+	text-align: center;
+	padding: 15px
+}
+@media (max-width: 900px){
+	.marcas .col {
+		width: 30%
+	}
+}
+@media (max-width: 700px){
+	.marcas .col {
+		width: 50%
+	}
+}
+@media (max-width: 500px){
+	.marcas .col {
+		width: 100%
+	}
+}
+
+/* Devices
+-------------*/
+.devices {
+	padding: 5px 30px
+}
+.devices p {
+	margin-bottom: 40px
+}
+
+/* Rodapé 
+------------*/
+footer {
+	background: #f5f5f5;
+	padding: 30px 0;
+	padding-bottom: 0;
+	margin-top: 60px
+}
+footer .row {
+	margin: 0 -15px
+}
+footer .col {
+	width: 100px;
+	padding: 15px;
+	width: 16.6666666667%
+}
+footer li {
+	margin-bottom: 15px;
+	font-size: 18px
+}
+.list-link {
+	font-size: 16px;
+}
+.list-link:hover {
+	opacity: .7
+}
+.social {
+	margin-left: auto;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center
+}
+.social a {
+	display: inline-block;
+	margin: 8px
+}
+.social .fab {
+	font-size: 1.6em
+}
+.social a:hover {
+	-webkit-box-shadow: 0 0 2em rgba(0,0,0, .8);
+	        box-shadow: 0 0 2em rgba(0,0,0, .8);
+	background: rgba(0,0,0, .2)
+}
+.direitos {
+	text-align: center;
+	font-size: 13px;
+	margin-bottom: 20px
+}
+.direitos a {
+	opacity: .8
+}
+@media (max-width: 700px) {
+	footer .col {
+		width: 100%;
+		padding: 0px 15px;
+		text-align: center
+	}
+	footer .col img {
+		margin: 30px 0
+	}
+	.social {
+		margin: 30px 15px
+	}
+}
